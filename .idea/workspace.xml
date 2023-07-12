@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="">
+    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="finish">
+      <change afterPath="$PROJECT_DIR$/images/logo/Allure.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Allure2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Github.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Gradle.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Intelij_IDEA.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/JUnit5.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Java.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Jenkins.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Jira.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Selenide.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Selenoid.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/logo/Telegram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/screen/jenkins_build.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/helpers/Attach.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/helpers/Attach.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/AboutSmotryoshkaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/AboutSmotryoshkaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/MoviePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/MoviePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/RegistrationPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/RegistrationPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/SmartTVPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/SmartTVPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/WatchingTVPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/WatchingTVPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/СinemaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/СinemaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +62,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2SL5EVfkcfonbbiIVHTD5glj8XR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -71,12 +76,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/Yevgeny.Demidov/IdeaProjects/smotreshka"
+    "last_opened_file_path": "C:/Users/Yevgeny.Demidov/IdeaProjects/smotreshka/images/screen"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Yevgeny.Demidov\IdeaProjects\smotreshka\images\screen" />
+      <recent name="C:\Users\Yevgeny.Demidov\IdeaProjects\smotreshka\src\images\logo" />
       <recent name="C:\Users\Yevgeny.Demidov\IdeaProjects\smotreshka\src\test\java\ru\smotreshka" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Yevgeny.Demidov\IdeaProjects\smotreshka" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.MainPageTests">
@@ -144,6 +154,18 @@
       <option name="presentableId" value="Default" />
       <updated>1688912912713</updated>
     </task>
+    <task id="LOCAL-00001" summary="finish">
+      <created>1689153201829</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1689153201829</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish" />
   </component>
 </project>

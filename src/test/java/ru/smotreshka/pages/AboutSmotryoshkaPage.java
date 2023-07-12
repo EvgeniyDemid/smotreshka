@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
-public class AboutSmotryoshka {
+public class AboutSmotryoshkaPage {
 	SelenideElement title = $(byText("Познакомьтесь со Смотрёшкой"));
 
 	@Step("Проверить, что отображается название страницы О Смотрёшке")

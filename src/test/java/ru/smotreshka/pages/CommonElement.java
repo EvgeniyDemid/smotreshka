@@ -8,12 +8,10 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
-public class MoviePage {
-	SelenideElement title = $(byText("Кинотеатр"));
+public class CommonElement {
 
-	@Step("Проверить, что отображается название страницы Кинотеатр")
-	public MoviePage checkTitle() {
-		title.shouldBe(visible).shouldHave(text("Кинотеатр"));
-		return new MoviePage();
+	@Step("Проверить, что отображается название страницы {title}")
+	public void checkTitle(String title) {
+		$(byText(title)).shouldBe(visible);
 	}
 }

@@ -29,8 +29,7 @@ ____
 <a href="https://github.com/"><img src="images/logo/Github.svg" width="50" height="50"  alt="Github"/></a>  
 <a href="https://junit.org/junit5/"><img src="images/logo/JUnit5.svg" width="50" height="50"  alt="JUnit 5"/></a>  
 <a href="https://gradle.org/"><img src="images/logo/Gradle.svg" width="50" height="50"  alt="Gradle"/></a>  
-<a href="https://selenide.org/"><img src="images/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>   
-<a href="ht[images](images)tps://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50"  alt="Allure"/></a> 
+<a href="https://selenide.org/"><img src="images/logo/Selenide.svg" width="50" height="50"  alt="Selenide"/></a>
 <a href="https://qameta.io/"><img src="images/logo/Allure2.svg" width="50" height="50"  alt="Allure TestOps"/></a>   
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 </p>
@@ -71,6 +70,7 @@ ___
 ***Локальный запуск:***
 ```bash  
 gradle clean smoke_test
+gradle clean test
 ```
 
 ***Удалённый запуск через Jenkins:***
@@ -80,7 +80,7 @@ clean ${TASK}
 "-DbrowserSize=${BROWSER_SIZE}"
 "-Dbrowser=${BROWSER}"
 "-Dselenoid=${SELENOID}"
-"DbrowserVersion=${BROWSER_VERSION}"
+"-DbrowserVersion=${BROWSER_VERSION}"
 ```
 ___
 <a id="allure"></a>

@@ -82,6 +82,14 @@ clean ${TASK}
 "-Dselenoid=${SELENOID}"
 "-DbrowserVersion=${BROWSER_VERSION}"
 ```
+### Параметры сборки
+
+* <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение.
+* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>1920x1080</code>.
+* <code>BROWSER_NAME</code> – браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
+* <code>SELENOID</code> – адрес удаленного сервера, на котором будут запускаться тесты.
+* <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты. По-умолчанию - <code>100.0</code>.
+
 ___
 <a id="allure"></a>
 ## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/c20-DemidofE-lesson15-my-test-project/1/allure/)</a>

@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="fix &#10;remarks">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="edit BROWSER" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -260,13 +257,36 @@
       <option name="project" value="LOCAL" />
       <updated>1689514095744</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add Параметры сборки">
+      <created>1689847874802</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1689847874802</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add Параметры сборки">
+      <created>1689848085838</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1689848085838</updated>
+    </task>
+    <task id="LOCAL-00007" summary="edit BROWSER">
+      <created>1689848192667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689848192667</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="finish" />
     <MESSAGE value="readme" />
     <MESSAGE value="fix &#10;remarks" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix &#10;remarks" />
+    <MESSAGE value="add Параметры сборки" />
+    <MESSAGE value="edit BROWSER" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit BROWSER" />
   </component>
 </project>

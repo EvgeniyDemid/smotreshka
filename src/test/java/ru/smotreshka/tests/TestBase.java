@@ -24,7 +24,7 @@ public class TestBase {
 		Configuration.browserSize = System.getProperty("browserSize", "1920x1080");
 		Configuration.browser = System.getProperty("browser", "chrome");
 		Configuration.remote = System.getProperty("selenoid");
-		Configuration.browserVersion = System.getProperty("browserVersion");
+		Configuration.browserVersion = System.getProperty("browserVersion","100.0");
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("selenoid:options", Map.<String, Object>of(

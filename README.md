@@ -82,7 +82,7 @@ clean ${TASK}
 "-Dselenoid=${SELENOID}"
 "-DbrowserVersion=${BROWSER_VERSION}"
 ```
-### Параметры сборки
+***Параметры сборки:***
 
 * <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение.
 * <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>1920x1080</code>.

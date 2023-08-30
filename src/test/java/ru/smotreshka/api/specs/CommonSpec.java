@@ -9,7 +9,7 @@ import static ru.smotreshka.helpers.CustomAllureListener.withCustomTemplates;
 
 public class CommonSpec {
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
-	static String baseUri = System.getProperty("UrlApi", config.urlApi());
+	static String baseUri = System.getProperty("urlApi", config.urlApi());
 	public static RequestSpecification requestSpec = with()
 			.log()
 			.all()

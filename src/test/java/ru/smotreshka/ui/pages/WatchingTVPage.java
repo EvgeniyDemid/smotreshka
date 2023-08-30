@@ -1,5 +1,6 @@
 package ru.smotreshka.ui.pages;
 
+import com.codeborne.selenide.CollectionCondition;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
@@ -62,7 +63,11 @@ public class WatchingTVPage {
 
 	@Step("Проверить,что список каналов равен {num}")
 	public void checkNumberChannel(int num) {
-		assertEquals(cardChannelOnAir.size(), num, "Колличество каналов не равно " + num);
+		assertEquals(cardChannelOnAir
+				.shouldBe(CollectionCondition
+						.sizeGreaterThan(0))
+				.size(), num,
+				"Колличество каналов не равно " + num);
 	}
 
 	@Step("Выбрать категорию {genre}")

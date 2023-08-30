@@ -52,7 +52,7 @@ public class CinemaTests extends BaseTest {
 				RestAssured
 						.given(requestSpec)
 						.when()
-						.param("limit", 5)
+						.param("limit", 3)
 						.get("/vod/v2/premier/titles")
 						.then()
 						.spec(cinemaMovieListResponseSpec)

@@ -1,4 +1,4 @@
-package ru.smotreshka.ui.tests.pages;
+package ru.smotreshka.ui.pages;
 
 import io.qameta.allure.Step;
 

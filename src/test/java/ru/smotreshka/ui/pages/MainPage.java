@@ -1,19 +1,20 @@
-package ru.smotreshka.ui.tests.pages;
+package ru.smotreshka.ui.pages;
 
-import com.codeborne.selenide.Selenide;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
 	SelenideElement loginButton = $(byText("Вход"));
 
 	@Step("Открыть главную страницу")
 	public void openPage() {
-		Selenide.open("");
+		open("");
 	}
 
 	@Step("Проверить, что кнопка Войти отображается на главной странице")

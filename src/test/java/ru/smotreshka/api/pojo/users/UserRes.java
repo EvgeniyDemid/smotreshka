@@ -1,10 +1,13 @@
 package ru.smotreshka.api.pojo.users;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonTypeInfo;
+import lombok.*;
 
-@AllArgsConstructor
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class UserRes {
 	private String id;
 	private String email;
@@ -16,6 +19,7 @@ public class UserRes {
 
 	@AllArgsConstructor
 	@Data
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	public class IVI {
 		private int id;
 		private int expiration;

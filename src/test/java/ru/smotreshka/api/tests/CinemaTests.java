@@ -4,8 +4,7 @@ import io.qameta.allure.Description;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.api.pojo.movie.MoviePremRes;
-import ru.smotreshka.ui.tests.pages.CinemaPage;
-import ru.smotreshka.ui.tests.pages.LoginPage;
+import ru.smotreshka.ui.pages.CinemaPage;
 
 import java.util.ArrayList;
 import java.util.List;

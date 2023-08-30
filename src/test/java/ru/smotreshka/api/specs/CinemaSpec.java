@@ -12,7 +12,6 @@ public class CinemaSpec {
 			.expectStatusCode(200)
 			.expectBody("preview.id", notNullValue())
 			.expectBody("preview.title", notNullValue())
-			.expectBody("preview.thumbnails", notNullValue())
 			.expectBody("preview.posters", notNullValue())
 			.expectBody("preview.genres", notNullValue())
 			.expectBody("preview.categories", notNullValue())

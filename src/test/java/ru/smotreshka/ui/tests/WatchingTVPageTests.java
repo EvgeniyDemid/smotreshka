@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import ru.smotreshka.enams.GenresTV;
-import ru.smotreshka.ui.tests.pages.CommonElement;
-import ru.smotreshka.ui.tests.pages.LoginPage;
-import ru.smotreshka.ui.tests.pages.MainPage;
-import ru.smotreshka.ui.tests.pages.WatchingTVPage;
+import ru.smotreshka.ui.pages.CommonElement;
+import ru.smotreshka.ui.pages.LoginPage;
+import ru.smotreshka.ui.pages.MainPage;
+import ru.smotreshka.ui.pages.WatchingTVPage;
 
 import static io.qameta.allure.Allure.step;
 import static ru.smotreshka.enams.MenuBody.WATCH_TV;

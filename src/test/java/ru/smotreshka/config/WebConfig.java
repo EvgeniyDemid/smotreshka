@@ -10,17 +10,22 @@ import org.aeonbits.owner.Config;
 })
 public interface WebConfig extends Config {
 	@Key("browser")
+	@DefaultValue("chrome")
 	String browser();
 
+	@DefaultValue("100.0")
 	@Key("browserVersion")
 	String browserVersion();
 
+	@DefaultValue("1920x1080")
 	@Key("browserSize")
 	String browserSize();
 
+	@DefaultValue("https://smotreshka.tv/")
 	@Key("baseUrl")
 	String baseUrl();
 
+	@DefaultValue("false")
 	@Key("isRemote")
 	boolean isRemote();
 

@@ -1,4 +1,4 @@
-package ru.smotreshka.ui.tests.pages;
+package ru.smotreshka.ui.pages;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;

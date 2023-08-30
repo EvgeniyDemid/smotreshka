@@ -15,7 +15,6 @@ public class BaseTest {
 	String password = config.password();
 	@BeforeAll
 	static void beforeAll() {
-		WebDriverManager.chromedriver().setup();
 		Configuration.baseUrl = System.getProperty("baseUrl", config.baseUrl());
 		Configuration.pageLoadStrategy = "eager";
 		Configuration.browserSize = System.getProperty("browserSize", config.browserSize());

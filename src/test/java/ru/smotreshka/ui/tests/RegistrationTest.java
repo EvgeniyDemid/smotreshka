@@ -2,10 +2,11 @@ package ru.smotreshka.ui.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
-import ru.smotreshka.ui.tests.pages.CommonElement;
-import ru.smotreshka.ui.tests.pages.LoginPage;
-import ru.smotreshka.ui.tests.pages.MainPage;
+import ru.smotreshka.ui.pages.CommonElement;
+import ru.smotreshka.ui.pages.LoginPage;
+import ru.smotreshka.ui.pages.MainPage;
 
 @Owner("Demidov")
 public class RegistrationTest extends TestBase {

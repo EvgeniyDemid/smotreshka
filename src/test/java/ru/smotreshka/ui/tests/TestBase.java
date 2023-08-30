@@ -30,6 +30,9 @@ public class TestBase {
 		Configuration.browser = System.getProperty("browser", config.browser());
 		Configuration.remote = System.getProperty("selenoid");
 		Configuration.browserVersion = System.getProperty("browserVersion", config.browserVersion());
+		if (config.isRemote()) {
+			Configuration.remote = config.remoteUrl();
+		}
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setCapability("selenoid:options", Map.<String, Object>of(

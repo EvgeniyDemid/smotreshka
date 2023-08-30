@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="finish">
+    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="System.getProperty">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CinemaSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CinemaSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/tests/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/tests/CinemaTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/tests/CinemaTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/MainPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/WatchingTVPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/WatchingTVPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/pages/CinemaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/CinemaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/pages/CommonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/CommonElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/tests/pages/WatchingTVPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/WatchingTVPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/config/remote.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/remote.properties" afterDir="false" />
     </list>
@@ -322,7 +309,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693415212650</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix test">
+      <option name="closed" value="true" />
+      <created>1693426754343</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1693426754343</updated>
+    </task>
+    <task id="LOCAL-00011" summary="System.getProperty">
+      <option name="closed" value="true" />
+      <created>1693427858941</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1693427858941</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -332,7 +335,9 @@
     <MESSAGE value="edit BROWSER" />
     <MESSAGE value="def browserVersion" />
     <MESSAGE value="finish" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish" />
+    <MESSAGE value="fix test" />
+    <MESSAGE value="System.getProperty" />
+    <option name="LAST_COMMIT_MESSAGE" value="System.getProperty" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

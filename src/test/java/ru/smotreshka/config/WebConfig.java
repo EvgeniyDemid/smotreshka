@@ -37,4 +37,8 @@ public interface WebConfig extends Config {
 
 	@Key("password")
 	String password();
+
+	@Key("urlApi")
+	@DefaultValue("https://fe.smotreshka.tv")
+	String urlApi();
 }

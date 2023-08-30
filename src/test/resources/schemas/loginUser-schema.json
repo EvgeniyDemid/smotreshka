@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "age_rating": {
+      "type": "integer"
+    },
+    "username": {
+      "type": "string"
+    },
+    "session": {
+      "type": "string"
+    },
+    "IVI": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "expiration": {
+          "type": "integer"
+        },
+        "verimatrix_id": {
+          "type": "string"
+        },
+        "session": {
+          "type": "string"
+        },
+        "set_at": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "id",
+        "expiration",
+        "verimatrix_id",
+        "session",
+        "set_at"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "email",
+    "name",
+    "age_rating",
+    "username",
+    "session",
+    "IVI"
+  ]
+}

@@ -1,27 +1,25 @@
-package ru.smotreshka.tests;
+package ru.smotreshka.ui.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ru.smotreshka.pages.CommonElement;
-import ru.smotreshka.pages.MainPage;
+import ru.smotreshka.ui.tests.pages.CommonElement;
+import ru.smotreshka.ui.tests.pages.LoginPage;
+import ru.smotreshka.ui.tests.pages.MainPage;
 
+@Owner("Demidov")
 public class RegistrationTest extends TestBase {
 	MainPage mainPage = new MainPage();
 	CommonElement commonElement = new CommonElement();
+	LoginPage loginPage = new LoginPage();
 
 	@Test
-	@Owner("Demidov")
-	@Tag("smoke")
 	@Description("Проверить, что кнопка войти отображается на главной странице")
 	public void checkLoginButtonIsVisible() {
 		mainPage.checkLoginButton();
 	}
 
 	@Test
-	@Owner("Demidov")
-	@Tag("smoke")
 	@Description("Открытие страницы авторизации")
 	public void openLoginPage() {
 		mainPage.clickButton("Вход");
@@ -29,12 +27,11 @@ public class RegistrationTest extends TestBase {
 	}
 
 	@Test
-	@Owner("Demidov")
-	@Tag("smoke")
 	@Description("Открытие страницы регистрации")
 	public void openRegistrationPage() {
 		mainPage.clickButton("Вход");
 		mainPage.clickButton("Регистрация");
+		loginPage.clickAgreeWithConditions();
 		commonElement.checkTitle("Регистрация");
 	}
 }

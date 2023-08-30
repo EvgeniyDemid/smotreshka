@@ -1,4 +1,4 @@
-package ru.smotreshka.pages;
+package ru.smotreshka.ui.tests.pages;
 
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
@@ -12,15 +12,13 @@ public class MainPage {
 	SelenideElement loginButton = $(byText("Вход"));
 
 	@Step("Открыть главную страницу")
-	public MainPage openPage() {
+	public void openPage() {
 		Selenide.open("");
-		return new MainPage();
 	}
 
 	@Step("Проверить, что кнопка Войти отображается на главной странице")
-	public MainPage checkLoginButton() {
+	public void checkLoginButton() {
 		loginButton.shouldBe(visible);
-		return new MainPage();
 	}
 
 	@Step("Нажать на кнопку {buttonName}")
@@ -28,4 +26,8 @@ public class MainPage {
 		$(byText(buttonName)).click();
 	}
 
+	@Step("Нажать на Войти на главной странице")
+	public void clickLoginButton() {
+		loginButton.click();
+	}
 }

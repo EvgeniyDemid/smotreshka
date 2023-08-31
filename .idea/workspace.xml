@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="System.getProperty">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/WatchingTVPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/WatchingTVPage.java" afterDir="false" />
+    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="fix limit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/screen/allure_graths.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/screen/allure_graths.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/screen/jenkins.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/screen/jenkins.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/screen/jenkins_build.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/screen/jenkins_build.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/screen/jenkins_tests.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/screen/jenkins_tests.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/screen/telegram.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/screen/telegram.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/Yevgeny.Demidov/IdeaProjects/paas-hub_automatic-tests",
+    "last_opened_file_path": "C:/Users/Yevgeny.Demidov/IdeaProjects/smotreshka",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
@@ -330,7 +335,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693428443660</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add shouldBe">
+      <option name="closed" value="true" />
+      <created>1693430137122</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1693430137122</updated>
+    </task>
+    <task id="LOCAL-00014" summary="fix limit">
+      <option name="closed" value="true" />
+      <created>1693430247244</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1693430247244</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -342,7 +363,9 @@
     <MESSAGE value="finish" />
     <MESSAGE value="fix test" />
     <MESSAGE value="System.getProperty" />
-    <option name="LAST_COMMIT_MESSAGE" value="System.getProperty" />
+    <MESSAGE value="add shouldBe" />
+    <MESSAGE value="fix limit" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix limit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

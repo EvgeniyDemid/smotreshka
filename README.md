@@ -45,6 +45,9 @@ ____
 - ✓ *Проверка перехода на страницу Кинотеатр*
 - ✓ *Проверка перехода на страницу На Smart TV*
 - ✓ *Проверка перехода на страницу О Смотрёшке*
+- ✓ *Добавление каналов в избранное*
+- ✓ *Поиск каналов*
+- ✓ *Проверка данных полученных по API*
 
 
 ____
@@ -52,7 +55,7 @@ ____
 ## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/c20-DemidofE-lesson15-my-test-project/)</a>
 ____
 <p align="center">  
-<a href="https://jenkins.autotests.cloud/job/c20-DemidofE-lesson15-my-test-project/"><img src="images/screen/jenkins_build.png" alt="Jenkins" width="950"/></a>  
+<a href="https://jenkins.autotests.cloud/job/c20-DemidofE-Diplom-Project/"><img src="images/screen/jenkins_build.png" alt="Jenkins" width="950"/></a>  
 </p>
 
 
@@ -69,13 +72,14 @@ ____
 ___
 ***Локальный запуск:***
 ```bash  
-gradle clean smoke_test
 gradle clean test
 ```
 
 ***Удалённый запуск через Jenkins:***
 ```bash  
-clean ${TASK}
+clean test
+"-DurlApi=${URL_API}"
+"-Denv=remote"
 "-DbaseUrl=${BASE_URL}"
 "-DbrowserSize=${BROWSER_SIZE}"
 "-Dbrowser=${BROWSER}"
@@ -89,10 +93,10 @@ clean ${TASK}
 * <code>BROWSER</code> – браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
 * <code>SELENOID</code> – адрес удаленного сервера, на котором будут запускаться тесты.
 * <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты. По-умолчанию - <code>100.0</code>.
-
+* <code>URL_API</code> - url для API запросов
 ___
 <a id="allure"></a>
-## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/c20-DemidofE-lesson15-my-test-project/1/allure/)</a>
+## <img alt="Allure" height="25" src="images/logo/Allure.svg" width="25"/></a> <a name="Allure"></a>Allure [отчет](https://jenkins.autotests.cloud/job/c20-DemidofE-Diplom-Project/8/allure/)</a>
 ___
 
 ### *Основная страница отчёта*

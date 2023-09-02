@@ -145,12 +145,12 @@ ___
 
 #### Dashboard
 <p align="center">
-<img title="Dashboard" src="images/screen/AllureTestOps.png">
+<img title="Dashboard" src="images/screen/AllureTestOps.png" width="850">
 </p>
 
 #### Тест-кейсы в Allure TestOps
 <p align="center">
-<img title="AllureTestOpsCases" src="images/screen/allureTestOpsCase.png">
+<img title="AllureTestOpsCases" src="images/screen/allureTestOpsCase.png" width="850">
 </p>
 ____
 <a id="telegram"></a>

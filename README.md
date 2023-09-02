@@ -143,12 +143,12 @@ ___
 
 ## <img alt="Allure" height="25" src="images/logo/Allure_Testops.svg" width="25"/></a> <a name="Интеграция с Allure TestOps"></a>Интеграция с Allure TestOps [Dashboard](https://allure.autotests.cloud/project/3621/dashboards)</a>
 
-#### Dashboard
+#### *Dashboard*
 <p align="center">
 <img title="Dashboard" src="images/screen/AllureTestOps.png" width="850">
 </p>
 
-#### Тест-кейсы в Allure TestOps
+#### *Тест-кейсы в Allure TestOps*
 <p align="center">
 <img title="AllureTestOpsCases" src="images/screen/allureTestOpsCase.png" width="850">
 </p>

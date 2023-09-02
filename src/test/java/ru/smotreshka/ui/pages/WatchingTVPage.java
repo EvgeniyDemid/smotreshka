@@ -24,6 +24,7 @@ public class WatchingTVPage {
 	private final ElementsCollection genresButtons = $$(".genres button");
 	private final SelenideElement listTvButton = $(byText("Список каналов"));
 	private final ElementsCollection favoriteButtonsOnCard = $$("[class^='button bookmark hidden-mobile-and-tablet light medium']");
+	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
 
 	@Step("Ввести название канала {channel} в окне поиска ")
 	public void setFindNameTv(String channel) {
@@ -95,5 +96,14 @@ public class WatchingTVPage {
 	@Step("Нажать на кнопку 'Список каналов'")
 	public void clickListTvButton() {
 		listTvButton.click();
+	}
+
+	@Step("Очистить список избранного")
+	public void clearFavorite(){
+		if (watchingTVPage.checkListFavoritesIsNotEmpty()) {
+			for (int i = 0; i < watchingTVPage.getNumberChannel(); i++) {
+				watchingTVPage.clickChannelOnFavorite(1);
+			}
+		}
 	}
 }

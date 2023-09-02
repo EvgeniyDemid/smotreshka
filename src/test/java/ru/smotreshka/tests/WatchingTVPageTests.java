@@ -2,10 +2,12 @@ package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
+import ru.smotreshka.config.UserConfig;
 import ru.smotreshka.enams.GenresTV;
 import ru.smotreshka.ui.pages.CommonElement;
 import ru.smotreshka.ui.pages.LoginPage;
@@ -18,6 +20,7 @@ import static ru.smotreshka.enams.MenuBody.WATCH_TV;
 @Owner("Demidov")
 @Tag("ui")
 public class WatchingTVPageTests extends BaseTest {
+	static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
 	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
 	private final MainPage mainPage = new MainPage();
 	private final CommonElement commonElement = new CommonElement();
@@ -37,18 +40,9 @@ public class WatchingTVPageTests extends BaseTest {
 	@Test
 	@Description("Добавление каналов в избранное ")
 	public void addChannelInFavorite() {
-		String login = config.login();
-		String password = config.password();
-		loginPage.loginByMobileAndPassword(login, password);
-		step("Очистить список избранного если он не пустой", () -> {
-					mainPage.clickButton(WATCH_TV.getValue());
-					if (watchingTVPage.checkListFavoritesIsNotEmpty()) {
-						for (int i = 0; i < watchingTVPage.getNumberChannel(); i++) {
-							watchingTVPage.clickChannelOnFavorite(1);
-						}
-					}
-				}
-		);
+		loginPage.loginByMobileAndPassword(config.login(), config.password());
+		mainPage.clickButton(WATCH_TV.getValue());
+		watchingTVPage.clearFavorite();
 		mainPage.clickButton(WATCH_TV.getValue());
 		watchingTVPage.checkListFavoritesIsEmpty();
 		watchingTVPage.chooseGenre(GenresTV.ALL_CHANNELS.getValue());

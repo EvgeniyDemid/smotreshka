@@ -104,7 +104,7 @@ clean {TASK}
 
 ***Параметры запуска:***
 
-* <code>TASK</code> – Запускаемые автоетсы (ui,api,test).
+* <code>TASK</code> – Запускаемые автотесты (ui,api,test).
 * <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение.
 * <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>
   1920x1080</code>.
@@ -142,11 +142,16 @@ ___
 ___
 <a id="allure_testops"></a>
 
-## <img alt="Allure" height="25" src="images/logo/Allure_Testops.svg" width="25"/></a> <a name="Интеграция с Allure TestOps"></a>Интеграция с Allure TestOps [Allure TestOps Dashboard](https://allure.autotests.cloud/project/3621/dashboards)</a>
+## <img alt="Allure" height="25" src="images/logo/Allure_Testops.svg" width="25"/></a> <a name="Интеграция с Allure TestOps"></a>Интеграция с Allure TestOps [Dashboard](https://allure.autotests.cloud/project/3621/dashboards)</a>
 
 #### Dashboard
 <p align="center">
-<img title="Jenkins Build" src="images/screens/AllureTestOps.png">
+<img title="Jenkins Build" src="images/screen/AllureTestOps.png">
+</p>
+
+#### Тест-кейсы в Allure TestOps
+<p align="center">
+<img title="Jenkins Build" src="images/screen/allureTestOpsCase.png">
 </p>
 ____
 <a id="telegram"></a>
@@ -157,6 +162,7 @@ ____
 <p align="center">  
 <img title="Allure Overview Dashboard" src="images/screen/telegram.png" width="550">  
 </p>
+
 
 ____
 <a id="video"></a>

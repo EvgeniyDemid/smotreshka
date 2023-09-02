@@ -1,7 +1,9 @@
-package ru.smotreshka.api.tests;
+package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import io.restassured.RestAssured;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.api.pojo.users.UserRes;
 
@@ -13,8 +15,12 @@ import static ru.smotreshka.api.specs.CommonSpec.requestSpec;
 import static ru.smotreshka.api.specs.LoginSpec.loginResponseSpec;
 import static ru.smotreshka.api.specs.LoginSpec.loginResponseSpec403;
 
+@Owner("Demidov")
+@Tag("api")
 public class LoginTests extends BaseTest {
-	String errorMessage = "Неправильный логин или пароль.";
+	private final String errorMessage = "Неправильный логин или пароль.";
+	private final String email = System.getProperty("email");
+	private final String password = System.getProperty("password");
 
 	@Test
 	@Description("Успешная авторизация")

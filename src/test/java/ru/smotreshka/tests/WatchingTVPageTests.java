@@ -1,7 +1,8 @@
-package ru.smotreshka.ui.tests;
+package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -15,11 +16,12 @@ import static io.qameta.allure.Allure.step;
 import static ru.smotreshka.enams.MenuBody.WATCH_TV;
 
 @Owner("Demidov")
-public class WatchingTVPageTests extends TestBase {
-	WatchingTVPage watchingTVPage = new WatchingTVPage();
-	MainPage mainPage = new MainPage();
-	CommonElement commonElement = new CommonElement();
-	LoginPage loginPage = new LoginPage();
+@Tag("ui")
+public class WatchingTVPageTests extends BaseTest {
+	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
+	private final MainPage mainPage = new MainPage();
+	private final CommonElement commonElement = new CommonElement();
+	private final LoginPage loginPage = new LoginPage();
 
 
 	@ParameterizedTest
@@ -67,7 +69,5 @@ public class WatchingTVPageTests extends TestBase {
 		watchingTVPage.checkCardChannelOnAir(channel);
 		watchingTVPage.clickListTvButton();
 		watchingTVPage.checkCardChannelOnListTv(channel);
-
-
 	}
 }

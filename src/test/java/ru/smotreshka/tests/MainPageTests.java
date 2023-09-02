@@ -1,8 +1,8 @@
-package ru.smotreshka.ui.tests;
+package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import ru.smotreshka.enams.MenuBody;
@@ -10,9 +10,10 @@ import ru.smotreshka.ui.pages.CommonElement;
 import ru.smotreshka.ui.pages.MainPage;
 
 @Owner("Demidov")
-public class MainPageTests extends TestBase {
-	MainPage mainPage = new MainPage();
-	CommonElement commonElement = new CommonElement();
+@Tag("ui")
+public class MainPageTests extends BaseTest {
+	private final MainPage mainPage = new MainPage();
+	private final CommonElement commonElement = new CommonElement();
 
 	@ParameterizedTest
 	@EnumSource(MenuBody.class)

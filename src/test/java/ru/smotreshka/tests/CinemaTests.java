@@ -1,7 +1,9 @@
-package ru.smotreshka.api.tests;
+package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import io.restassured.RestAssured;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.api.pojo.movie.MoviePremRes;
 import ru.smotreshka.ui.pages.CinemaPage;
@@ -15,8 +17,10 @@ import static ru.smotreshka.api.specs.CinemaSpec.cinemaMovieListResponseSpec;
 import static ru.smotreshka.api.specs.CinemaSpec.cinemaMoviePremResponseSpec;
 import static ru.smotreshka.api.specs.CommonSpec.requestSpec;
 
+@Owner("Demidov")
+@Tag("api")
 public class CinemaTests extends BaseTest {
-	CinemaPage cinemaPage = new CinemaPage();
+	private final CinemaPage cinemaPage = new CinemaPage();
 
 	@Test
 	@Description("Проверить информации о популярных фильмах")

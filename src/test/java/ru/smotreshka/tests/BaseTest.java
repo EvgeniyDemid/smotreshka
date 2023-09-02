@@ -1,4 +1,4 @@
-package ru.smotreshka.ui.tests;
+package ru.smotreshka.tests;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
@@ -16,8 +16,8 @@ import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class TestBase {
-	MainPage mainPage = new MainPage();
+public class BaseTest {
+	private final MainPage mainPage = new MainPage();
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 
 	@BeforeAll

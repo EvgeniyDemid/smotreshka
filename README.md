@@ -104,13 +104,12 @@ clean {TASK}
 
 ***Параметры запуска:***
 
-* <code>TASK</code> – Запускаемые автотесты (ui,api,test).
-* <code>BASE_URL</code> – Url, по которому будет открываться тестируемое приложение.
-* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты. По-умолчанию - <code>
-  1920x1080</code>.
-* <code>BROWSER</code> – браузер, в котором будут выполняться тесты. По-умолчанию - <code>chrome</code>.
+* <code>TASK</code> – Запускаемые автотесты (ui тесты,api тесты).
+* <code>BASE_URL</code> – url, по которому будет открываться тестируемое приложение.
+* <code>BROWSER_SIZE</code> – размер окна браузера, в котором будут выполняться тесты (по-умолчанию - <code>1920x1080</code>)
+* <code>BROWSER</code> – браузер, в котором будут выполняться тесты (по-умолчанию - <code>chrome</code>)
 * <code>SELENOID</code> – адрес удаленного сервера, на котором будут запускаться тесты.
-* <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты. По-умолчанию - <code>100.0</code>.
+* <code>BROWSER_VERSION</code> – версия браузера, в которой будут выполняться тесты (по-умолчанию - <code>100.0</code>)
 * <code>URL_API</code> - url для API запросов
 
 ___
@@ -146,12 +145,12 @@ ___
 
 #### Dashboard
 <p align="center">
-<img title="Jenkins Build" src="images/screen/AllureTestOps.png">
+<img title="Dashboard" src="images/screen/AllureTestOps.png">
 </p>
 
 #### Тест-кейсы в Allure TestOps
 <p align="center">
-<img title="Jenkins Build" src="images/screen/allureTestOpsCase.png">
+<img title="AllureTestOpsCases" src="images/screen/allureTestOpsCase.png">
 </p>
 ____
 <a id="telegram"></a>

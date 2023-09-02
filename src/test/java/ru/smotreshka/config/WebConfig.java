@@ -32,12 +32,6 @@ public interface WebConfig extends Config {
 	@Key("remoteUrl")
 	String remoteUrl();
 
-	@Key("login")
-	String login();
-
-	@Key("password")
-	String password();
-
 	@Key("urlApi")
 	@DefaultValue("https://fe.smotreshka.tv")
 	String urlApi();

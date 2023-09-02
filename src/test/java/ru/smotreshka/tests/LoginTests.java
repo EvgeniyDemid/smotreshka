@@ -3,9 +3,11 @@ package ru.smotreshka.tests;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.restassured.RestAssured;
+import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.api.pojo.users.UserRes;
+import ru.smotreshka.config.UserConfig;
 
 import static io.qameta.allure.Allure.step;
 import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
@@ -18,9 +20,10 @@ import static ru.smotreshka.api.specs.LoginSpec.loginResponseSpec403;
 @Owner("Demidov")
 @Tag("api")
 public class LoginTests extends BaseTest {
+	static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
 	private final String errorMessage = "Неправильный логин или пароль.";
-	private final String email = System.getProperty("email");
-	private final String password = System.getProperty("password");
+	private final String email = System.getProperty("email", config.login());
+	private final String password = System.getProperty("password", config.password());
 
 	@Test
 	@Description("Успешная авторизация")

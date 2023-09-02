@@ -89,7 +89,7 @@ ___
 gradle clean test -Demail={EMAIL} -Dpassword={PASSWORD}
 ```
 
-***Удалённый запуск с параметрами ***
+***Удалённый запуск с параметрами***
 
 ```bash  
 clean {TASK}

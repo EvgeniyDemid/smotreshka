@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.smotreshka.config.BrowserConfig;
 import ru.smotreshka.config.WebConfig;
 import ru.smotreshka.helpers.Attach;
-import ru.smotreshka.ui.pages.MainPage;
+import ru.smotreshka.pages.MainPage;
 
 import java.util.Map;
 

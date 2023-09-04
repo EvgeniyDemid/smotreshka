@@ -2,11 +2,7 @@ package ru.smotreshka.config;
 
 import org.aeonbits.owner.Config;
 
-@Config.LoadPolicy(Config.LoadType.MERGE)
-@Config.Sources({
-		"system:properties",
-		"classpath:config/user.properties"
-})
+@Config.Sources({"classpath:config/common.properties"})
 public interface AttachConfig extends Config {
 
 	@Key("videoUrl")

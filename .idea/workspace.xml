@@ -4,10 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="fix &#10;remarks">
+    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="login password">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/movie/MoviePremRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/movie/MoviePremRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserReq.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/AttachConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/AttachConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/BrowserConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/CinemaTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/RegistrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/WatchingTVPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/WatchingTVPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/CinemaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/CinemaPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/CommonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/CommonElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/WatchingTVPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/WatchingTVPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/user.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,31 +108,7 @@
       <recent name="ru.smotreshka.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.WatchingTVPageTests">
-    <configuration name="CinemaTests.movieInformation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.smotreshka.tests.CinemaTests.movieInformation&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.Tests in 'ru.smotreshka.tests'">
     <configuration name="LoginTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,6 +181,30 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="Tests in 'ru.smotreshka.tests'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":ui_test" />
+            <option value="--tests" />
+            <option value="&quot;ru.smotreshka.tests.*&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="WatchingTVPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -226,11 +242,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'ru.smotreshka.tests'" />
         <item itemvalue="Gradle.WatchingTVPageTests" />
         <item itemvalue="Gradle.LoginTests.wrongLoginTest" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="Gradle.MainPageTests" />
-        <item itemvalue="Gradle.CinemaTests.movieInformation" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +523,31 @@
       <option name="project" value="LOCAL" />
       <updated>1693838457148</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="readme">
+      <option name="closed" value="true" />
+      <created>1693839370402</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1693839370402</updated>
+    </task>
+    <task id="LOCAL-00036" summary="login password">
+      <option name="closed" value="true" />
+      <created>1693839645319</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1693839645319</updated>
+    </task>
+    <task id="LOCAL-00037" summary="login password">
+      <option name="closed" value="true" />
+      <created>1693851994508</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1693851994508</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -520,37 +560,38 @@
     <MESSAGE value="add shouldBe" />
     <MESSAGE value="fix limit" />
     <MESSAGE value="allureTestOpsCase" />
-    <MESSAGE value="readme" />
     <MESSAGE value="width=&quot;850&quot;" />
     <MESSAGE value="****" />
     <MESSAGE value="add userConfig" />
     <MESSAGE value="add user properties" />
     <MESSAGE value="fix &#10;remarks" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix &#10;remarks" />
+    <MESSAGE value="readme" />
+    <MESSAGE value="login password" />
+    <option name="LAST_COMMIT_MESSAGE" value="login password" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTests.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTest.java</url>
           <line>21</line>
-          <properties class="ru.smotreshka.tests.MainPageTests" method="checkPageTitle">
+          <properties class="ru.smotreshka.tests.MainPageTest" method="checkPageTitle">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/WatchingTVPageTests.java</url>
-          <line>31</line>
-          <properties class="ru.smotreshka.tests.WatchingTVPageTests" method="checkChannelDisplayGenre">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/WatchingTVPageTest.java</url>
+          <line>27</line>
+          <properties class="ru.smotreshka.tests.WatchingTVPageTest" method="checkChannelDisplayGenre">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/CinemaTests.java</url>
+          <url>file://$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/CinemaTest.java</url>
           <line>76</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>

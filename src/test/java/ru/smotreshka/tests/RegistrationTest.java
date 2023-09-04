@@ -4,9 +4,9 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import ru.smotreshka.ui.pages.CommonElement;
-import ru.smotreshka.ui.pages.LoginPage;
-import ru.smotreshka.ui.pages.MainPage;
+import ru.smotreshka.pages.CommonElement;
+import ru.smotreshka.pages.LoginPage;
+import ru.smotreshka.pages.MainPage;
 
 @Owner("Demidov")
 @Tag("ui")

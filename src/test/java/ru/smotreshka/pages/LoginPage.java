@@ -1,4 +1,4 @@
-package ru.smotreshka.ui.pages;
+package ru.smotreshka.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;

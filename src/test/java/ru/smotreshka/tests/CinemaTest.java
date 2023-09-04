@@ -7,7 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.api.pojo.movie.MoviePremRes;
-import ru.smotreshka.ui.pages.CinemaPage;
+import ru.smotreshka.pages.CinemaPage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,7 +46,6 @@ public class CinemaTest extends TestBase {
 						.get("vod/v2/ivi/titles/" + id)
 						.then()
 						.spec(cinemaMoviePremResponseSpec);
-				;
 			}
 		});
 	}

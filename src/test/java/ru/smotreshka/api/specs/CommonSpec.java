@@ -1,6 +1,5 @@
 package ru.smotreshka.api.specs;
 
-import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import org.aeonbits.owner.ConfigFactory;
 import ru.smotreshka.config.WebConfig;

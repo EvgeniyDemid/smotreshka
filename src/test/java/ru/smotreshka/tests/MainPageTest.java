@@ -6,8 +6,8 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import ru.smotreshka.enams.MenuBody;
-import ru.smotreshka.ui.pages.CommonElement;
-import ru.smotreshka.ui.pages.MainPage;
+import ru.smotreshka.pages.CommonElement;
+import ru.smotreshka.pages.MainPage;
 
 @Owner("Demidov")
 @Tag("ui")

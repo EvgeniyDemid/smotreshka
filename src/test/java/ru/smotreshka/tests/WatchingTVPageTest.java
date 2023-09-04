@@ -7,10 +7,10 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
 import ru.smotreshka.enams.GenresTV;
-import ru.smotreshka.ui.pages.CommonElement;
-import ru.smotreshka.ui.pages.LoginPage;
-import ru.smotreshka.ui.pages.MainPage;
-import ru.smotreshka.ui.pages.WatchingTVPage;
+import ru.smotreshka.pages.CommonElement;
+import ru.smotreshka.pages.LoginPage;
+import ru.smotreshka.pages.MainPage;
+import ru.smotreshka.pages.WatchingTVPage;
 
 import static ru.smotreshka.enams.MenuBody.WATCH_TV;
 

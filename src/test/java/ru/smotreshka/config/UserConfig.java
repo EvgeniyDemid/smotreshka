@@ -8,6 +8,7 @@ import org.aeonbits.owner.Config;
 		"classpath:config/user.properties"
 })
 public interface UserConfig extends Config {
+
 	@Key("login")
 	String login();
 

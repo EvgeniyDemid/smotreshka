@@ -28,7 +28,7 @@ public class LoginTests extends BaseTest {
 	@Test
 	@Description("Успешная авторизация c учеткой ")
 	public void successfulLoginTest() {
-		UserRes respons = step("Отправка запроса на авторизацию ", () ->
+		UserRes respons = step("Отправка запроса на авторизацию c учеткой" + email, () ->
 				RestAssured
 						.given(requestSpec)
 						.formParam("email", email)

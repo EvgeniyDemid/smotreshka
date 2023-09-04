@@ -8,6 +8,7 @@ import org.aeonbits.owner.Config;
 		"classpath:config/user.properties"
 })
 public interface AttachConfig extends Config {
+
 	@Key("videoUrl")
 	String videoUrl();
 }

@@ -1,5 +1,6 @@
 package ru.smotreshka.api.specs;
 
+import io.restassured.RestAssured;
 import io.restassured.specification.RequestSpecification;
 import org.aeonbits.owner.ConfigFactory;
 import ru.smotreshka.config.WebConfig;
@@ -8,8 +9,10 @@ import static io.restassured.RestAssured.with;
 import static ru.smotreshka.helpers.CustomAllureListener.withCustomTemplates;
 
 public class CommonSpec {
+
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 	static String baseUri = System.getProperty("urlApi", config.urlApi());
+
 	public static RequestSpecification requestSpec = with()
 			.log()
 			.all()

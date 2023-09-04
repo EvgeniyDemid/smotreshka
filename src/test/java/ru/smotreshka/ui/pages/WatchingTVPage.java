@@ -6,8 +6,6 @@ import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import java.util.List;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
@@ -17,14 +15,18 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class WatchingTVPage {
-	private final SelenideElement findNameTvInput = $(By.xpath("//input[@placeholder='Название телеканала']"));
-	private final ElementsCollection cardChannelOnAir = $$("[class^='tile-channel-now']");
-	private final List<SelenideElement> cardChannelOnListTv = $$(".inner");
-	private final SelenideElement favoritesButton = $(byText("Избранные"));
-	private final ElementsCollection genresButtons = $$(".genres button");
-	private final SelenideElement listTvButton = $(byText("Список каналов"));
-	private final ElementsCollection favoriteButtonsOnCard = $$("[class^='button bookmark hidden-mobile-and-tablet light medium']");
+
 	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
+
+	private final SelenideElement findNameTvInput = $(By.xpath("//input[@placeholder='Название телеканала']")),
+			favoritesButton = $(byText("Избранные")),
+			listTvButton = $(byText("Список каналов"));
+
+	private final ElementsCollection cardChannelOnAir = $$("[class^='tile-channel-now']"),
+			cardChannelOnListTv = $$(".inner"),
+			genresButtons = $$(".genres button"),
+			favoriteButtonsOnCard = $$("[class^='button bookmark hidden-mobile-and-tablet light medium']");
+
 
 	@Step("Ввести название канала {channel} в окне поиска ")
 	public void setFindNameTv(String channel) {
@@ -65,9 +67,9 @@ public class WatchingTVPage {
 	@Step("Проверить,что список каналов равен {num}")
 	public void checkNumberChannel(int num) {
 		assertEquals(cardChannelOnAir
-				.shouldBe(CollectionCondition
-						.sizeGreaterThan(0))
-				.size(), num,
+						.shouldBe(CollectionCondition
+								.sizeGreaterThan(0))
+						.size(), num,
 				"Колличество каналов не равно " + num);
 	}
 
@@ -99,7 +101,7 @@ public class WatchingTVPage {
 	}
 
 	@Step("Очистить список избранного")
-	public void clearFavorite(){
+	public void clearFavorite() {
 		if (watchingTVPage.checkListFavoritesIsNotEmpty()) {
 			for (int i = 0; i < watchingTVPage.getNumberChannel(); i++) {
 				watchingTVPage.clickChannelOnFavorite(1);

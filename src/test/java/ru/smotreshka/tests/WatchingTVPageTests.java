@@ -2,6 +2,7 @@ package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
+import jakarta.inject.Inject;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -14,18 +15,22 @@ import ru.smotreshka.ui.pages.LoginPage;
 import ru.smotreshka.ui.pages.MainPage;
 import ru.smotreshka.ui.pages.WatchingTVPage;
 
-import static io.qameta.allure.Allure.step;
 import static ru.smotreshka.enams.MenuBody.WATCH_TV;
 
 @Owner("Demidov")
 @Tag("ui")
 public class WatchingTVPageTests extends BaseTest {
-	static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
-	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
-	private final MainPage mainPage = new MainPage();
-	private final CommonElement commonElement = new CommonElement();
-	private final LoginPage loginPage = new LoginPage();
 
+	@Inject
+	WatchingTVPage watchingTVPage;
+	@Inject
+	MainPage mainPage;
+	@Inject
+	CommonElement commonElement;
+	@Inject
+	LoginPage loginPage;
+
+	static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
 
 	@ParameterizedTest
 	@EnumSource(GenresTV.class)

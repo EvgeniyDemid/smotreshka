@@ -2,8 +2,10 @@ package ru.smotreshka.helpers;
 
 import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import ru.smotreshka.config.AttachConfig;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -14,6 +16,8 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
+	static AttachConfig config = ConfigFactory.create(AttachConfig.class, System.getProperties());
+
 	@Attachment(value = "{attachName}", type = "image/png")
 	public static byte[] screenshotAs(String attachName) {
 		return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
@@ -36,7 +40,6 @@ public class Attach {
 		);
 	}
 
-
 	@Attachment(value = "Video", type = "text/html", fileExtension = ".html")
 	public static String addVideo() {
 		return "<html><body><video width='100%' height='100%' controls autoplay><source src='"
@@ -45,8 +48,8 @@ public class Attach {
 	}
 
 	public static URL getVideoUrl() {
-		String videoUrl = "https://selenoid.autotests.cloud/video/" + sessionId() + ".mp4";
-//        System.out.println(sessionId());
+		String videoUrl = config.videoUrl() + sessionId() + ".mp4";
+
 		try {
 			return new URL(videoUrl);
 		} catch (MalformedURLException e) {

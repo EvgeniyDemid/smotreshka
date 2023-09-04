@@ -7,6 +7,7 @@ import static io.restassured.filter.log.LogDetail.ALL;
 import static org.hamcrest.core.IsNull.notNullValue;
 
 public class CinemaSpec {
+
 	public static ResponseSpecification cinemaMoviePremResponseSpec = new ResponseSpecBuilder()
 			.log(ALL)
 			.expectStatusCode(200)
@@ -25,6 +26,7 @@ public class CinemaSpec {
 			.expectBody("preview.brandingMethods", notNullValue())
 			.expectBody("details", notNullValue())
 			.build();
+
 	public static ResponseSpecification cinemaMovieListResponseSpec = new ResponseSpecBuilder()
 			.log(ALL)
 			.expectStatusCode(200)

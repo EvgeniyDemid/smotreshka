@@ -7,15 +7,16 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
+
 	MainPage mainPage = new MainPage();
 
-	private static final SelenideElement byLoginButton = $(byText("По логину"));
-	private static final SelenideElement loginInput = $("[class='input medium'][type='text']");
-	private static final SelenideElement passwordInput = $("[class='input medium'][type='password']");
-	private static final SelenideElement nextButton = $("button[type='submit']");
-	private static final SelenideElement nextInGreetingsButton = $("[class='button default overlay-default-before light primary']");
-	private static final SelenideElement childProfileButton = $(byText("Детский"));
-	private static final SelenideElement agreeWithConditions = $("[class^='button default overlay-default-before light primary']");
+	private static final SelenideElement byLoginButton = $(byText("По логину")),
+			loginInput = $("[class='input medium'][type='text']"),
+			passwordInput = $("[class='input medium'][type='password']"),
+			nextButton = $("button[type='submit']"),
+			nextInGreetingsButton = $("[class='button default overlay-default-before light primary']"),
+			childProfileButton = $(byText("Детский")),
+			agreeWithConditions = $("[class^='button default overlay-default-before light primary']");
 
 	@Step("Авторизация по логину и паролю")
 	public void loginByMobileAndPassword(String login, String password) {
@@ -27,8 +28,9 @@ public class LoginPage {
 		nextInGreetingsButton.click();
 		childProfileButton.click();
 	}
+
 	@Step("Нажать на кнопку Я согласен с условиями")
-	public void clickAgreeWithConditions(){
+	public void clickAgreeWithConditions() {
 		agreeWithConditions.click();
 	}
 }

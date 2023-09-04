@@ -2,6 +2,7 @@ package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
+import jakarta.inject.Inject;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -12,7 +13,10 @@ import ru.smotreshka.ui.pages.MainPage;
 @Owner("Demidov")
 @Tag("ui")
 public class MainPageTests extends BaseTest {
-	private final MainPage mainPage = new MainPage();
+
+	@Inject
+	MainPage mainPage;
+
 	private final CommonElement commonElement = new CommonElement();
 
 	@ParameterizedTest

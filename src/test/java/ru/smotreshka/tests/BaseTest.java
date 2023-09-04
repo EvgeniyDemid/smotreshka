@@ -3,11 +3,13 @@ package ru.smotreshka.tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
+import jakarta.inject.Inject;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import ru.smotreshka.config.BrowserConfig;
 import ru.smotreshka.config.WebConfig;
 import ru.smotreshka.helpers.Attach;
 import ru.smotreshka.ui.pages.MainPage;
@@ -17,18 +19,23 @@ import java.util.Map;
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
-	private final MainPage mainPage = new MainPage();
+
+	@Inject
+	MainPage mainPage;
+
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
+	static BrowserConfig browserConfig = ConfigFactory.create(BrowserConfig.class, System.getProperties());
 
 	@BeforeAll
 	static void beforeAll() {
 		Configuration.baseUrl = System.getProperty("baseUrl", config.baseUrl());
 		Configuration.pageLoadStrategy = "eager";
-		Configuration.browserSize = System.getProperty("browserSize", config.browserSize());
-		Configuration.browser = System.getProperty("browser", config.browser());
+		Configuration.browserSize = System.getProperty("browserSize", browserConfig.browserSize());
+		Configuration.browser = System.getProperty("browser", browserConfig.browser());
 		Configuration.remote = System.getProperty("selenoid");
-		Configuration.browserVersion = System.getProperty("browserVersion", config.browserVersion());
-		if (config.isRemote()) {
+		Configuration.browserVersion = System.getProperty("browserVersion", browserConfig.browserVersion());
+		boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", config.isRemote()));
+		if (isRemote) {
 			Configuration.remote = config.remoteUrl();
 		}
 

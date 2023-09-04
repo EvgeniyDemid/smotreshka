@@ -11,7 +11,7 @@ import ru.smotreshka.ui.pages.MainPage;
 
 @Owner("Demidov")
 @Tag("ui")
-public class MainPageTests extends BaseTest {
+public class MainPageTest extends TestBase {
 
 	private final MainPage mainPage = new MainPage();
 

@@ -2,12 +2,10 @@ package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
-import ru.smotreshka.config.UserConfig;
 import ru.smotreshka.enams.GenresTV;
 import ru.smotreshka.ui.pages.CommonElement;
 import ru.smotreshka.ui.pages.LoginPage;
@@ -18,7 +16,7 @@ import static ru.smotreshka.enams.MenuBody.WATCH_TV;
 
 @Owner("Demidov")
 @Tag("ui")
-public class WatchingTVPageTests extends BaseTest {
+public class WatchingTVPageTest extends TestBase {
 
 	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
 	private final MainPage mainPage = new MainPage();

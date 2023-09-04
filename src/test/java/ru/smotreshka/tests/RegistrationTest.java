@@ -10,7 +10,7 @@ import ru.smotreshka.ui.pages.MainPage;
 
 @Owner("Demidov")
 @Tag("ui")
-public class RegistrationTests extends BaseTest {
+public class RegistrationTest extends TestBase {
 
 	private final MainPage mainPage = new MainPage();
 	private final CommonElement commonElement = new CommonElement();

@@ -3,6 +3,7 @@ package ru.smotreshka.tests;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.restassured.RestAssured;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.api.pojo.movie.MoviePremRes;
@@ -19,11 +20,12 @@ import static ru.smotreshka.api.specs.CommonSpec.requestSpec;
 
 @Owner("Demidov")
 @Tag("api")
-public class CinemaTests extends BaseTest {
+public class CinemaTest extends TestBase {
 
 	private final CinemaPage cinemaPage = new CinemaPage();
 
 	@Test
+	@DisplayName("Проверить информации о популярных фильмах.")
 	@Description("Проверить информации о популярных фильмах")
 	public void movieInformation() {
 		List<String> moviesId = step("Получить список id всех фильмов", () ->
@@ -50,7 +52,7 @@ public class CinemaTests extends BaseTest {
 	}
 
 	@Test
-	@Description("Проверить, что данные полученные по api корректно отображается на ui для фильмов premier")
+	@DisplayName("Проверить, что данные полученные по api корректно отображается на ui для фильмов premier")
 	public void checkCinemaPremier() {
 		List<MoviePremRes> movieInfoResList = new ArrayList<>();
 		List<String> moviesId = step("Получить список id  фильмов", () ->

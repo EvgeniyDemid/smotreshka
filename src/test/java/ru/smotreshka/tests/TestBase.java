@@ -17,7 +17,7 @@ import java.util.Map;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class BaseTest {
+public class TestBase {
 
 	private final MainPage mainPage = new MainPage();
 

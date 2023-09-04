@@ -22,16 +22,16 @@ import static ru.smotreshka.api.specs.LoginSpec.loginResponseSpec403;
 public class LoginTests extends BaseTest {
 	private static final UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
 	private final String errorMessage = "Неправильный логин или пароль.";
-	private String email = config.login();
-	private String password = config.password();
+	private final String login = System.getProperty("login");
+	private final String password = System.getProperty("password");
 
 	@Test
 	@Description("Успешная авторизация c учеткой ")
 	public void successfulLoginTest() {
-		UserRes respons = step("Отправка запроса на авторизацию c учеткой " + email, () ->
+		UserRes respons = step("Отправка запроса на авторизацию c учеткой " + login, () ->
 				RestAssured
 						.given(requestSpec)
-						.formParam("email", email)
+						.formParam("email", login)
 						.formParam("password", password)
 						.when()
 						.post("/v2/login")
@@ -43,9 +43,9 @@ public class LoginTests extends BaseTest {
 						.response()
 						.as(UserRes.class));
 		step("Проверка ответа ", () -> {
-			assertEquals(respons.getEmail(), email);
-			assertEquals(respons.getName(), email);
-			assertEquals(respons.getUsername(), email);
+			assertEquals(respons.getEmail(), login);
+			assertEquals(respons.getName(), login);
+			assertEquals(respons.getUsername(), login);
 		});
 	}
 

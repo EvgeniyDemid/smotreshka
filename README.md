@@ -86,13 +86,13 @@ ___
 (Для запуска необходимо зарегистироваться на https://smotreshka.tv/)
 
 ```bash  
-gradle clean test -Demail={EMAIL} -Dpassword={PASSWORD}
+gradle clean test -Dlogin={LOGIN} -Dpassword={PASSWORD}
 ```
 
 ***Удалённый запуск с параметрами***
 
 ```bash  
-clean {TASK}
+clean test
 "-DurlApi=${URL_API}"
 "-DisRemote=true"
 "-DbaseUrl=${BASE_URL}"
@@ -100,6 +100,8 @@ clean {TASK}
 "-Dbrowser=${BROWSER}"
 "-Dselenoid=${SELENOID}"
 "-DbrowserVersion=${BROWSER_VERSION}"
+"-Dlogin=${LOGIN}"
+"-Dpassword=${PASSWORD}"
 ```
 
 ***Параметры запуска:***

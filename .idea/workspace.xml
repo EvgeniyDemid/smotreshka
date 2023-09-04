@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="fix &#10;remarks">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/LoginTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/config/user.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +67,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -89,31 +92,7 @@
       <recent name="ru.smotreshka.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.LoginTests.wrongLoginTest">
-    <configuration name="CinemaTests (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;ru.smotreshka.tests.CinemaTests&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>true</ForceTestExec>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.WatchingTVPageTests">
     <configuration name="CinemaTests.movieInformation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -210,6 +189,30 @@
       <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="WatchingTVPageTests" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":ui_test" />
+            <option value="--tests" />
+            <option value="&quot;ru.smotreshka.tests.WatchingTVPageTests&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>true</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -223,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.WatchingTVPageTests" />
         <item itemvalue="Gradle.LoginTests.wrongLoginTest" />
         <item itemvalue="Gradle.LoginTests" />
         <item itemvalue="Gradle.MainPageTests" />
         <item itemvalue="Gradle.CinemaTests.movieInformation" />
-        <item itemvalue="Gradle.CinemaTests (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +475,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693831186265</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix &#10;remarks">
+      <option name="closed" value="true" />
+      <created>1693831498409</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1693831498409</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fix &#10;remarks">
+      <option name="closed" value="true" />
+      <created>1693834810996</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1693834810996</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

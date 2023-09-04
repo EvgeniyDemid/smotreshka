@@ -1,7 +1,7 @@
 package ru.smotreshka.tests;
 
-import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -25,7 +25,7 @@ public class WatchingTVPageTest extends TestBase {
 
 	@ParameterizedTest
 	@EnumSource(GenresTV.class)
-	@Description("Проверить, что в каталоге прямого эфира и в списке каналов есть доступные каналы")
+	@DisplayName("Проверить, что в каталоге прямого эфира и в списке каналов есть доступные каналы")
 	public void checkChannelDisplayGenre(GenresTV genre) {
 		mainPage.clickButton(WATCH_TV.getValue());
 		commonElement.checkTitle(WATCH_TV.getValue());
@@ -34,7 +34,7 @@ public class WatchingTVPageTest extends TestBase {
 	}
 
 	@Test
-	@Description("Добавление каналов в избранное ")
+	@DisplayName("Добавление каналов в избранное ")
 	public void addChannelInFavorite() {
 		loginPage.loginByMobileAndPassword(login, password);
 		mainPage.clickButton(WATCH_TV.getValue());
@@ -50,7 +50,7 @@ public class WatchingTVPageTest extends TestBase {
 	}
 
 	@Test
-	@Description("Поиск каналов")
+	@DisplayName("Поиск каналов")
 	public void findChannel() {
 		String channel = "СТС";
 		mainPage.clickButton(WATCH_TV.getValue());

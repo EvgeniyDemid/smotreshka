@@ -1,6 +1,5 @@
 package ru.smotreshka.tests;
 
-import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.restassured.RestAssured;
 import org.junit.jupiter.api.DisplayName;
@@ -26,7 +25,6 @@ public class CinemaTest extends TestBase {
 
 	@Test
 	@DisplayName("Проверить информации о популярных фильмах.")
-	@Description("Проверить информации о популярных фильмах")
 	public void movieInformation() {
 		List<String> moviesId = step("Получить список id всех фильмов", () ->
 				RestAssured

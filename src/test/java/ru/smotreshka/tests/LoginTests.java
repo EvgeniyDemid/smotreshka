@@ -20,10 +20,8 @@ import static ru.smotreshka.api.specs.LoginSpec.loginResponseSpec403;
 @Owner("Demidov")
 @Tag("api")
 public class LoginTests extends BaseTest {
-	private static final UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
+
 	private final String errorMessage = "Неправильный логин или пароль.";
-	private final String login = System.getProperty("login");
-	private final String password = System.getProperty("password");
 
 	@Test
 	@Description("Успешная авторизация c учеткой ")

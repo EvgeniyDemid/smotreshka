@@ -24,6 +24,9 @@ public class BaseTest {
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 	static BrowserConfig browserConfig = ConfigFactory.create(BrowserConfig.class, System.getProperties());
 	static boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", config.isRemote()));
+	protected final String login = System.getProperty("login");
+	protected final String password = System.getProperty("password");
+
 
 	@BeforeAll
 	static void beforeAll() {

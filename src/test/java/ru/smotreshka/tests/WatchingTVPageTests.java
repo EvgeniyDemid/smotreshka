@@ -25,8 +25,6 @@ public class WatchingTVPageTests extends BaseTest {
 	private final CommonElement commonElement = new CommonElement();
 	private final LoginPage loginPage = new LoginPage();
 
-	private final static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
-
 	@ParameterizedTest
 	@EnumSource(GenresTV.class)
 	@Description("Проверить, что в каталоге прямого эфира и в списке каналов есть доступные каналы")
@@ -40,7 +38,7 @@ public class WatchingTVPageTests extends BaseTest {
 	@Test
 	@Description("Добавление каналов в избранное ")
 	public void addChannelInFavorite() {
-		loginPage.loginByMobileAndPassword(config.login(), config.password());
+		loginPage.loginByMobileAndPassword(login, password);
 		mainPage.clickButton(WATCH_TV.getValue());
 		watchingTVPage.clearFavorite();
 		mainPage.clickButton(WATCH_TV.getValue());

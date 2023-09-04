@@ -3,7 +3,6 @@ package ru.smotreshka.tests;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
-import jakarta.inject.Inject;
 import org.aeonbits.owner.ConfigFactory;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -20,8 +19,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
 
-	@Inject
-	MainPage mainPage;
+	MainPage mainPage = new MainPage();
 
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 	static BrowserConfig browserConfig = ConfigFactory.create(BrowserConfig.class, System.getProperties());

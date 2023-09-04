@@ -33,8 +33,7 @@ dependencies {
             'org.aeonbits.owner:owner:1.0.12',
             'io.rest-assured:rest-assured:4.5.1',
             "io.qameta.allure:allure-rest-assured:$allureVersion",
-            "io.rest-assured:json-schema-validator:$restAssuredVersion",
-            'com.google.inject:guice:7.0.0'
+            "io.rest-assured:json-schema-validator:$restAssuredVersion"
     )
 }
 

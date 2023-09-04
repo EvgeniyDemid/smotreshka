@@ -2,7 +2,6 @@ package ru.smotreshka.tests;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import jakarta.inject.Inject;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.smotreshka.ui.pages.CommonElement;
@@ -13,12 +12,9 @@ import ru.smotreshka.ui.pages.MainPage;
 @Tag("ui")
 public class RegistrationTests extends BaseTest {
 
-	@Inject
-	 MainPage mainPage;
-	@Inject
-	CommonElement commonElement;
-	@Inject
-	LoginPage loginPage ;
+	MainPage mainPage = new MainPage();
+	CommonElement commonElement = new CommonElement();
+	LoginPage loginPage = new LoginPage();
 
 	@Test
 	@Description("Проверить, что кнопка войти отображается на главной странице")

@@ -1,6 +1,5 @@
 package ru.smotreshka.tests;
 
-import com.google.inject.Inject;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import io.restassured.RestAssured;
@@ -22,8 +21,7 @@ import static ru.smotreshka.api.specs.CommonSpec.requestSpec;
 @Tag("api")
 public class CinemaTests extends BaseTest {
 
-	@Inject
-	CinemaPage cinemaPage;
+	CinemaPage cinemaPage = new CinemaPage();
 
 	@Test
 	@Description("Проверить информации о популярных фильмах")

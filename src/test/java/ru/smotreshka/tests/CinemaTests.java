@@ -21,7 +21,7 @@ import static ru.smotreshka.api.specs.CommonSpec.requestSpec;
 @Tag("api")
 public class CinemaTests extends BaseTest {
 
-	CinemaPage cinemaPage = new CinemaPage();
+	private final CinemaPage cinemaPage = new CinemaPage();
 
 	@Test
 	@Description("Проверить информации о популярных фильмах")

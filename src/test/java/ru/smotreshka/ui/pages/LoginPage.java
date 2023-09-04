@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
 
-	MainPage mainPage = new MainPage();
+	private final MainPage mainPage = new MainPage();
 
 	private static final SelenideElement byLoginButton = $(byText("По логину")),
 			loginInput = $("[class='input medium'][type='text']"),

@@ -16,8 +16,6 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class WatchingTVPage {
 
-	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
-
 	private final SelenideElement findNameTvInput = $(By.xpath("//input[@placeholder='Название телеканала']")),
 			favoritesButton = $(byText("Избранные")),
 			listTvButton = $(byText("Список каналов"));
@@ -102,9 +100,9 @@ public class WatchingTVPage {
 
 	@Step("Очистить список избранного")
 	public void clearFavorite() {
-		if (watchingTVPage.checkListFavoritesIsNotEmpty()) {
-			for (int i = 0; i < watchingTVPage.getNumberChannel(); i++) {
-				watchingTVPage.clickChannelOnFavorite(1);
+		if (checkListFavoritesIsNotEmpty()) {
+			for (int i = 0; i < getNumberChannel(); i++) {
+				clickChannelOnFavorite(1);
 			}
 		}
 	}

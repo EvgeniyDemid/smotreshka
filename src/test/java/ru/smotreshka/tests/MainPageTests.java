@@ -13,7 +13,7 @@ import ru.smotreshka.ui.pages.MainPage;
 @Tag("ui")
 public class MainPageTests extends BaseTest {
 
-	MainPage mainPage = new MainPage();
+	private final MainPage mainPage = new MainPage();
 
 	private final CommonElement commonElement = new CommonElement();
 

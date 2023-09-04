@@ -12,9 +12,9 @@ import ru.smotreshka.ui.pages.MainPage;
 @Tag("ui")
 public class RegistrationTests extends BaseTest {
 
-	MainPage mainPage = new MainPage();
-	CommonElement commonElement = new CommonElement();
-	LoginPage loginPage = new LoginPage();
+	private final MainPage mainPage = new MainPage();
+	private final CommonElement commonElement = new CommonElement();
+	private final LoginPage loginPage = new LoginPage();
 
 	@Test
 	@Description("Проверить, что кнопка войти отображается на главной странице")

@@ -20,12 +20,12 @@ import static ru.smotreshka.enams.MenuBody.WATCH_TV;
 @Tag("ui")
 public class WatchingTVPageTests extends BaseTest {
 
-	WatchingTVPage watchingTVPage = new WatchingTVPage();
-	MainPage mainPage = new MainPage();
-	CommonElement commonElement = new CommonElement();
-	LoginPage loginPage = new LoginPage();
+	private final WatchingTVPage watchingTVPage = new WatchingTVPage();
+	private final MainPage mainPage = new MainPage();
+	private final CommonElement commonElement = new CommonElement();
+	private final LoginPage loginPage = new LoginPage();
 
-	static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
+	private final static UserConfig config = ConfigFactory.create(UserConfig.class, System.getProperties());
 
 	@ParameterizedTest
 	@EnumSource(GenresTV.class)

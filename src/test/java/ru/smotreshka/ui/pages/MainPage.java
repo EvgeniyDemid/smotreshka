@@ -10,7 +10,7 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class MainPage {
 
-	SelenideElement loginButton = $(byText("Вход"));
+	private final SelenideElement loginButton = $(byText("Вход"));
 
 	@Step("Открыть главную страницу")
 	public void openPage() {

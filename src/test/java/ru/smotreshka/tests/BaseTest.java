@@ -19,10 +19,11 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class BaseTest {
 
-	MainPage mainPage = new MainPage();
+	private final MainPage mainPage = new MainPage();
 
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
 	static BrowserConfig browserConfig = ConfigFactory.create(BrowserConfig.class, System.getProperties());
+	static boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", config.isRemote()));
 
 	@BeforeAll
 	static void beforeAll() {
@@ -32,7 +33,6 @@ public class BaseTest {
 		Configuration.browser = System.getProperty("browser", browserConfig.browser());
 		Configuration.remote = System.getProperty("selenoid");
 		Configuration.browserVersion = System.getProperty("browserVersion", browserConfig.browserVersion());
-		boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", config.isRemote()));
 		if (isRemote) {
 			Configuration.remote = config.remoteUrl();
 		}
@@ -57,7 +57,9 @@ public class BaseTest {
 		Attach.screenshotAs("Last screenshot");
 		Attach.pageSource();
 		Attach.browserConsoleLogs();
-		Attach.addVideo();
+		if (isRemote) {
+			Attach.addVideo();
+		}
 		closeWebDriver();
 	}
 }

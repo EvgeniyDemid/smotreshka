@@ -39,15 +39,14 @@ public class TestBase {
 		Configuration.browserVersion = System.getProperty("browserVersion", browserConfig.browserVersion());
 		if (isRemote) {
 			Configuration.remote = remoteUrl;
+			DesiredCapabilities capabilities = new DesiredCapabilities();
+			capabilities.setCapability("selenoid:options", Map.<String, Object>of(
+					"enableVNC", true,
+					"enableVideo", true
+			));
+
+			Configuration.browserCapabilities = capabilities;
 		}
-
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setCapability("selenoid:options", Map.<String, Object>of(
-				"enableVNC", true,
-				"enableVideo", true
-		));
-
-		Configuration.browserCapabilities = capabilities;
 	}
 
 	@BeforeEach

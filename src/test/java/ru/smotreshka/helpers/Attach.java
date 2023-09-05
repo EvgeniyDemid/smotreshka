@@ -5,7 +5,7 @@ import io.qameta.allure.Attachment;
 import org.aeonbits.owner.ConfigFactory;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import ru.smotreshka.config.AttachConfig;
+import ru.smotreshka.config.MediaConfig;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -16,7 +16,7 @@ import static com.codeborne.selenide.WebDriverRunner.getWebDriver;
 import static org.openqa.selenium.logging.LogType.BROWSER;
 
 public class Attach {
-	static AttachConfig config = ConfigFactory.create(AttachConfig.class, System.getProperties());
+	static MediaConfig config = ConfigFactory.create(MediaConfig.class, System.getProperties());
 
 	@Attachment(value = "{attachName}", type = "image/png")
 	public static byte[] screenshotAs(String attachName) {

@@ -62,7 +62,7 @@ ____
 ____
 <a id="jenkins"></a>
 
-## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/c20-DemidofE-lesson15-my-test-project/)</a>
+## <img alt="Jenkins" height="25" src="images/logo/Jenkins.svg" width="25"/></a><a name="Сборка"></a>Сборка в [Jenkins](https://jenkins.autotests.cloud/job/c20-DemidofE-Diplom-Project/)</a>
 
 ____
 <p align="center">  

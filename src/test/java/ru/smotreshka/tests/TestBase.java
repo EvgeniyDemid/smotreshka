@@ -22,6 +22,7 @@ public class TestBase {
 	private final MainPage mainPage = new MainPage();
 
 	static WebConfig config = ConfigFactory.create(WebConfig.class, System.getProperties());
+	static String remoteUrl = System.getProperty("selenoid");
 	static BrowserConfig browserConfig = ConfigFactory.create(BrowserConfig.class, System.getProperties());
 	static boolean isRemote = Boolean.parseBoolean(System.getProperty("isRemote", config.isRemote()));
 	protected final String login = System.getProperty("login");
@@ -37,7 +38,7 @@ public class TestBase {
 		Configuration.remote = System.getProperty("selenoid");
 		Configuration.browserVersion = System.getProperty("browserVersion", browserConfig.browserVersion());
 		if (isRemote) {
-			Configuration.remote = config.remoteUrl();
+			Configuration.remote = remoteUrl;
 		}
 
 		DesiredCapabilities capabilities = new DesiredCapabilities();

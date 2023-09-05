@@ -13,9 +13,6 @@ public interface WebConfig extends Config {
 	@Key("isRemote")
 	String isRemote();
 
-	@Key("remoteUrl")
-	String remoteUrl();
-
 	@Key("urlApi")
 	@DefaultValue("https://fe.smotreshka.tv")
 	String urlApi();

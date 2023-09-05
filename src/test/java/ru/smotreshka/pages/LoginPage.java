@@ -10,7 +10,7 @@ public class LoginPage {
 
 	private final MainPage mainPage = new MainPage();
 
-	private static final SelenideElement byLoginButton = $(byText("По логину")),
+	private final SelenideElement byLoginButton = $(byText("По логину")),
 			loginInput = $("[class='input medium'][type='text']"),
 			passwordInput = $("[class='input medium'][type='password']"),
 			nextButton = $("button[type='submit']"),

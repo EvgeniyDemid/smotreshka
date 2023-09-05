@@ -3,6 +3,9 @@
 /build/
 *.log
 *.class
+gradlew
+gradlew.bat
+settings.gradle
 
 ### VS Code ###
 .vscode/

@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="login password">
+    <list default="true" id="ae69a866-f7d0-4d8a-a020-c611ba17ab89" name="Changes" comment="refactor code">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/movie/MoviePremRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/movie/MoviePremRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserReq.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserReq.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/pojo/users/UserRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/api/specs/CommonSpec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/AttachConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/AttachConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/BrowserConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/BrowserConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/config/WebConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/CinemaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/CinemaTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/MainPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/RegistrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/TestBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/WatchingTVPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/tests/WatchingTVPageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/CinemaPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/CinemaPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/CommonElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/CommonElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/smotreshka/ui/pages/WatchingTVPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/smotreshka/pages/WatchingTVPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/user.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +70,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yevgeny.Demidov/IdeaProjects/paas-hub_automatic-tests&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Yevgeny.Demidov/IdeaProjects/smotreshka&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
@@ -547,7 +529,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693851994508</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="refactor code">
+      <option name="closed" value="true" />
+      <created>1693852997544</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1693852997544</updated>
+    </task>
+    <task id="LOCAL-00039" summary="refactor code">
+      <option name="closed" value="true" />
+      <created>1693853630275</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1693853630275</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -567,7 +565,8 @@
     <MESSAGE value="fix &#10;remarks" />
     <MESSAGE value="readme" />
     <MESSAGE value="login password" />
-    <option name="LAST_COMMIT_MESSAGE" value="login password" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
